@@ -64,4 +64,14 @@ Run the site:
 $ npx lerna run dev
 ```
 
+#### Run a specific project:
+```shell
+$ npx lerna run dev --scope=@fem-aec/app-to-run
+```
+
+For running NuxtJs project:
+```shell
+$ npx lerna run dev --scope=@fem-aec/nuxtjs
+```
+
 **Note**: The process will change once the repo has different projects (Next.js) and (Nuxt) for the different teams.
