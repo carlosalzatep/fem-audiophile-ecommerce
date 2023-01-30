@@ -1,43 +1,39 @@
 <template>
-  <header
-    class="header"
-    :class="!isHeroImage && 'header--no-overlap'"
-    >
+  <header class="header" :class="!props.isHeroImage && 'header--no-overlap'">
     <section class="header__top">
       <img
         class="header__logo"
         src="~/assets/icons/logo.svg"
         alt="Audiophile logo"
-      >
+      />
       <nav class="header__nav nav" aria-label="Main page navigation">
-        <button class="nav__toggle">
-          Toggle main navigation
-        </button>
+        <button class="nav__toggle">Toggle main navigation</button>
         <ul class="nav__list">
           <li class="nav__list-item">
             <NuxtLink to="/" class="nav__link link__primary">Home</NuxtLink>
           </li>
           <li class="nav__list-item">
-            <NuxtLink to="/headphones" class="nav__link link__primary">Headphones</NuxtLink>
+            <NuxtLink to="/category/headphones" class="nav__link link__primary"
+              >Headphones</NuxtLink
+            >
           </li>
           <li class="nav__list-item">
-            <NuxtLink to="/speakers" class="nav__link link__primary">Speakers</NuxtLink>
+            <NuxtLink to="/category/speakers" class="nav__link link__primary"
+              >Speakers</NuxtLink
+            >
           </li>
           <li class="nav__list-item">
-            <NuxtLink to="/earphones" class="nav__link link__primary">Earphones</NuxtLink>
+            <NuxtLink to="/category/earphones" class="nav__link link__primary"
+              >Earphones</NuxtLink
+            >
           </li>
         </ul>
       </nav>
-      <button class="header__cart">
-        Add to cart
-      </button>
+      <button class="header__cart">Add to cart</button>
     </section>
 
     <!-- HERO SECTION -->
-    <section
-      v-if="isHeroImage"
-      class="hero"
-    >
+    <section v-if="props.isHeroImage" class="hero">
       <div class="hero__top">
         <picture class="hero__picture">
           <source
@@ -61,19 +57,18 @@
           XX99 Mark II Headphones
         </h1>
         <p class="hero__body">
-          Experience natural, lifelike audio and exceptional build quality made for the
-          passionate music enthusiast.
+          Experience natural, lifelike audio and exceptional build quality made
+          for the passionate music enthusiast.
         </p>
-        <a href="#" class="hero__button button__primary button__primary--inverse"
+        <a
+          href="#"
+          class="hero__button button__primary button__primary--inverse"
           >See product</a
         >
       </div>
     </section>
 
-    <section
-      v-else
-      class="hero hero--no-image"
-    >
+    <section v-else-if="heroTitle" class="hero hero--no-image">
       <div class="hero__content">
         <h1 class="hero__title">
           {{ heroTitle }}
@@ -83,13 +78,15 @@
   </header>
 </template>
 
-<script lang="ts" setup>
-  const props = defineProps({
-    isHeroImage: {
-      type: Boolean,
-      default: false,
-      required: true,
-    },
-    heroTitle: String,
-  });
+<script setup lang="ts">
+const props = defineProps({
+  isHeroImage: {
+    type: Boolean,
+    default: false,
+  },
+  heroTitle: {
+    type: String,
+    default: '',
+  },
+})
 </script>
