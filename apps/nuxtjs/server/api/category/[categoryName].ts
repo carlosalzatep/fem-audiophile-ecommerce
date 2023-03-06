@@ -1,9 +1,9 @@
 import { db } from '~~/server/db'
 
 export default defineEventHandler(async (e) => {
-  const { category = null } = e.context.params
+  const { categoryName = null } = e.context.params
   const filteredProducts = db.products.filter(
-    (item) => item.category === category
+    (item) => item.category === categoryName
   )
   if (filteredProducts?.length === 0) {
     const validationError = createError({

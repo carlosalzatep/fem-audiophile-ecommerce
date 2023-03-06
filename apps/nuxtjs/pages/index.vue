@@ -61,7 +61,11 @@
                 Upgrade to premium speakers that are phenomenally built to
                 deliver truly remarkable sound.
               </p>
-              <a href="" class="feature__link button__secondary">See product</a>
+              <NuxtLink
+                to="./product/zx9-speaker"
+                class="feature__link button__secondary button__secondary--inverse"
+                >See product</NuxtLink
+              >
             </div>
           </article>
         </li>
@@ -84,7 +88,11 @@
             </picture>
             <div class="feature__content">
               <p class="feature__title">ZX7 speaker</p>
-              <a href="" class="feature__link button__secondary">See product</a>
+              <NuxtLink
+                to="./product/zx7-speaker"
+                class="feature__link button__secondary"
+                >See product</NuxtLink
+              >
             </div>
           </article>
         </li>
@@ -107,7 +115,11 @@
             </picture>
             <div class="feature__content">
               <p class="feature__title">YX1 earphones</p>
-              <a href="" class="feature__link button__secondary">See product</a>
+              <NuxtLink
+                to="./product/yx1-earphones"
+                class="feature__link button__secondary"
+                >See product</NuxtLink
+              >
             </div>
           </article>
         </li>
@@ -126,7 +138,7 @@
         <img
           class="overview__image"
           src="~/assets/images/mobile/image-best-gear.jpg"
-          alt="Young adult listeing to music with XX99 Mark II headphones"
+          alt="Young adult listening to music with XX99 Mark II headphones"
         />
       </picture>
       <h2 class="overview__title">

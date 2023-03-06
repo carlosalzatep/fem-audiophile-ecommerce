@@ -3,7 +3,7 @@
 
   &::after {
     display: block;
-    content: "";
+    content: '';
     height: inherit;
     grid-area: 1/-1;
     mask: no-repeat center/contain;
@@ -21,4 +21,8 @@
   transition: box-shadow 0.2s cubic-bezier(0.15, 0, 0.15, 0),
     background-color 0.2s cubic-bezier(0.15, 0, 0.15, 0),
     color 0.2s cubic-bezier(0.15, 0, 0.15, 0);
+}
+
+%image-border {
+  border-radius: 8px;
 }

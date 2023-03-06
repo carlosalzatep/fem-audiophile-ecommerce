@@ -27,7 +27,7 @@
         "tertiary": {
           "rest": {
             "value": "{config.color.neutral.darkest.value}",
-            "modify" : [
+            "modify": [
               {
                 "type": "alpha",
                 "amount": 0.5
@@ -67,10 +67,15 @@
             "value": "{config.color.neutral.darkest.value}"
           }
         },
+        "secondary-inverse": {
+          "focus": {
+            "value": "{config.color.neutral.gray.value}"
+          }
+        },
         "tertiary": {
           "rest": {
             "value": "{config.color.neutral.darkest.value}",
-            "modify" : [
+            "modify": [
               {
                 "type": "alpha",
                 "amount": 0
@@ -79,7 +84,7 @@
           },
           "active": {
             "value": "{config.color.neutral.darkest.value}",
-            "modify" : [
+            "modify": [
               {
                 "type": "alpha",
                 "amount": 0
@@ -88,7 +93,7 @@
           },
           "focus": {
             "value": "{config.color.neutral.darkest.value}",
-            "modify" : [
+            "modify": [
               {
                 "type": "alpha",
                 "amount": 0

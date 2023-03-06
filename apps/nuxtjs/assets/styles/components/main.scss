@@ -1,15 +1,30 @@
 .main {
   display: grid;
-  gap: 96px;
-  margin: 0 auto;
-  padding: 0 6.4%;
+  gap: 120px;
+  margin: 40px auto 120px auto;
+  padding: 0 2.4rem;
 
   @media screen and (min-width: 768px) {
-    padding: 0 5.2%;
+    gap: 96px;
+    margin: 96px auto;
+    padding: 0 4rem;
   }
 
   @media screen and (min-width: 1440px) {
-    padding: 0;
+    margin: 120px auto 200px auto;
     max-width: 1110px;
+    padding: 0;
+  }
+
+  // Shared Styles across SFCs
+  .product__new-tag {
+    color: var(--fem-color-text-emphasis);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.3em;
+    text-align: center;
+    letter-spacing: 10px;
+    text-transform: uppercase;
   }
 }

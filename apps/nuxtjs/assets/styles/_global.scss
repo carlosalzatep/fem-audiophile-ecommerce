@@ -1,9 +1,13 @@
-@use "@fem-aec/tokens/dist/scss/mixins" as *;
-@use "@fem-aec/tokens/dist/scss/tokens" as *;
+@use '@fem-aec/tokens/dist/scss/mixins' as *;
+@use '@fem-aec/tokens/dist/scss/tokens' as *;
 
 body {
   background-color: var(--fem-color-background-primary);
   color: var(--fem-color-text-primary);
 
   @extend %fem-text-body-100;
+}
+
+img {
+  max-width: 100%;
 }

@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer footer--margin">
+  <footer class="footer">
     <img
       class="footer__logo"
       src="~/assets/icons/logo.svg"

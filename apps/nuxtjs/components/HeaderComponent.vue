@@ -1,11 +1,14 @@
 <template>
   <header class="header" :class="!props.isHeroImage && 'header--no-overlap'">
     <section class="header__top">
-      <img
-        class="header__logo"
-        src="~/assets/icons/logo.svg"
-        alt="Audiophile logo"
-      />
+      <NuxtLink to="/">
+        <img
+          class="header__logo"
+          src="~/assets/icons/logo.svg"
+          alt="Audiophile logo"
+        />
+      </NuxtLink>
+
       <nav class="header__nav nav" aria-label="Main page navigation">
         <button class="nav__toggle">Toggle main navigation</button>
         <ul class="nav__list">
@@ -13,19 +16,19 @@
             <NuxtLink to="/" class="nav__link link__primary">Home</NuxtLink>
           </li>
           <li class="nav__list-item">
-            <NuxtLink to="/category/headphones" class="nav__link link__primary"
-              >Headphones</NuxtLink
-            >
+            <NuxtLink to="/category/headphones" class="nav__link link__primary">
+              Headphones
+            </NuxtLink>
           </li>
           <li class="nav__list-item">
-            <NuxtLink to="/category/speakers" class="nav__link link__primary"
-              >Speakers</NuxtLink
-            >
+            <NuxtLink to="/category/speakers" class="nav__link link__primary">
+              Speakers
+            </NuxtLink>
           </li>
           <li class="nav__list-item">
-            <NuxtLink to="/category/earphones" class="nav__link link__primary"
-              >Earphones</NuxtLink
-            >
+            <NuxtLink to="/category/earphones" class="nav__link link__primary">
+              Earphones
+            </NuxtLink>
           </li>
         </ul>
       </nav>
@@ -60,10 +63,10 @@
           Experience natural, lifelike audio and exceptional build quality made
           for the passionate music enthusiast.
         </p>
-        <a
-          href="#"
-          class="hero__button button__primary button__primary--inverse"
-          >See product</a
+        <NuxtLink
+          to="./product/xx99-mark-one-headphones"
+          class="hero__button button__primary"
+          >See product</NuxtLink
         >
       </div>
     </section>
@@ -79,14 +82,13 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-  isHeroImage: {
-    type: Boolean,
-    default: false,
-  },
-  heroTitle: {
-    type: String,
-    default: '',
-  },
+interface Props {
+  isHeroImage?: boolean
+  heroTitle?: string
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  isHeroImage: false,
+  heroTitle: '',
 })
 </script>
