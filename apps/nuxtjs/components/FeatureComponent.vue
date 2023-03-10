@@ -1,6 +1,99 @@
-@use "@fem-aec/tokens/dist/scss/mixins" as *;
-@use "@fem-aec/tokens/dist/scss/tokens" as *;
-@use "@/assets/styles/mixins" as *;
+<template>
+  <section class="feature">
+    <ul class="feature__list">
+      <li class="feature__item feature__item--no-overlap-img">
+        <article class="feature__item-container">
+          <picture class="feature__picture">
+            <source
+              srcset="~/assets/images/desktop/image-speaker-zx9-home.png"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="~/assets/images/tablet/image-speaker-zx9-home.png"
+              media="(min-width: 768px)"
+            />
+            <img
+              class="feature__image"
+              src="~/assets/images/mobile/image-speaker-zx9-home.png"
+              alt="ZX9 speaker feature image"
+            />
+          </picture>
+          <div class="feature__content">
+            <p class="feature__title">ZX9 speaker</p>
+            <p class="feature__body">
+              Upgrade to premium speakers that are phenomenally built to deliver
+              truly remarkable sound.
+            </p>
+            <NuxtLink
+              to="./product/zx9-speaker"
+              class="feature__link button__secondary button__secondary--inverse"
+              >See product</NuxtLink
+            >
+          </div>
+        </article>
+      </li>
+      <li class="feature__item feature__item--bg-img">
+        <article class="feature__item-container">
+          <picture class="feature__picture">
+            <source
+              srcset="~/assets/images/desktop/image-speaker-zx7-home.jpg"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="~/assets/images/tablet/image-speaker-zx7-home.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              class="feature__image"
+              src="~/assets/images/mobile/image-speaker-zx7-home.jpg"
+              alt="ZX7 speaker feature image"
+            />
+          </picture>
+          <div class="feature__content">
+            <p class="feature__title">ZX7 speaker</p>
+            <NuxtLink
+              to="./product/zx7-speaker"
+              class="feature__link button__secondary"
+              >See product</NuxtLink
+            >
+          </div>
+        </article>
+      </li>
+      <li class="feature__item feature__item--alone-img">
+        <article class="feature__item-container">
+          <picture class="feature__picture">
+            <source
+              srcset="~/assets/images/desktop/image-earphones-yx1-home.jpg"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="~/assets/images/tablet/image-earphones-yx1-home.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              class="feature__image"
+              src="~/assets/images/mobile/image-earphones-yx1-home.jpg"
+              alt="YX1 earphones feature image"
+            />
+          </picture>
+          <div class="feature__content">
+            <p class="feature__title">YX1 earphones</p>
+            <NuxtLink
+              to="./product/yx1-earphones"
+              class="feature__link button__secondary"
+              >See product</NuxtLink
+            >
+          </div>
+        </article>
+      </li>
+    </ul>
+  </section>
+</template>
+
+<style lang="scss" scoped>
+@use '@fem-aec/tokens/dist/scss/mixins' as *;
+@use '@fem-aec/tokens/dist/scss/tokens' as *;
+@use '@/assets/styles/mixins' as *;
 
 .feature {
   $no-overlap-img: &;
@@ -31,7 +124,9 @@
 
     border-radius: 8px;
     text-align: center;
-    background-color: var(--fem-color-background-button-primary-rest); // TODO: Create proper token
+    background-color: var(
+      --fem-color-background-button-primary-rest
+    ); // TODO: Create proper token
 
     @extend %icon-mask;
 
@@ -49,8 +144,10 @@
       width: 171%;
       mask-position: center top -121px;
       mask-size: cover;
-      mask-image: url("@/assets/icons/pattern-circles.svg");
-      background-color: var(--fem-color-text-secondary-inverse);  // TODO: Create proper token
+      mask-image: url('@/assets/icons/pattern-circles.svg');
+      background-color: var(
+        --fem-color-text-secondary-inverse
+      ); // TODO: Create proper token
 
       @media screen and (min-width: 768px) {
         align-self: end;
@@ -218,6 +315,6 @@
         margin-bottom: 16px;
       }
     }
-
   }
 }
+</style>

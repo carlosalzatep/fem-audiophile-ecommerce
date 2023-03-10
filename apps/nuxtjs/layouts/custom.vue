@@ -1,6 +1,6 @@
 <template>
   <slot name="header" />
-  <main class="main">
+  <main>
     <slot />
   </main>
   <NuxtLayout name="footer" />

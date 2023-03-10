@@ -4,7 +4,7 @@ export const db = {
     {
       id: 1,
       slug: 'yx1-earphones',
-      name: 'YX1 Wireless Earphones',
+      name: 'YX1 Wireless',
       image: {
         mobile: '/images/product-yx1-earphones/mobile/image-product.jpg',
         tablet: '/images/product-yx1-earphones/tablet/image-product.jpg',
@@ -86,7 +86,7 @@ export const db = {
         },
         {
           slug: 'zx9-speaker',
-          name: 'ZX9 Speaker',
+          name: 'ZX9',
           image: {
             mobile: '/images/shared/mobile/image-zx9-speaker.jpg',
             tablet: '/images/shared/tablet/image-zx9-speaker.jpg',
@@ -98,7 +98,7 @@ export const db = {
     {
       id: 2,
       slug: 'xx59-headphones',
-      name: 'XX59 Headphones',
+      name: 'XX59',
       image: {
         mobile: '/images/product-xx59-headphones/mobile/image-product.jpg',
         tablet: '/images/product-xx59-headphones/tablet/image-product.jpg',
@@ -180,7 +180,7 @@ export const db = {
         },
         {
           slug: 'zx9-speaker',
-          name: 'ZX9 Speaker',
+          name: 'ZX9',
           image: {
             mobile: '/images/shared/mobile/image-zx9-speaker.jpg',
             tablet: '/images/shared/tablet/image-zx9-speaker.jpg',
@@ -192,7 +192,7 @@ export const db = {
     {
       id: 3,
       slug: 'xx99-mark-one-headphones',
-      name: 'XX99 Mark I Headphones',
+      name: 'XX99 Mark I',
       image: {
         mobile:
           '/images/product-xx99-mark-one-headphones/mobile/image-product.jpg',
@@ -282,7 +282,7 @@ export const db = {
         },
         {
           slug: 'zx9-speaker',
-          name: 'ZX9 Speaker',
+          name: 'ZX9',
           image: {
             mobile: '/images/shared/mobile/image-zx9-speaker.jpg',
             tablet: '/images/shared/tablet/image-zx9-speaker.jpg',
@@ -294,7 +294,7 @@ export const db = {
     {
       id: 4,
       slug: 'xx99-mark-two-headphones',
-      name: 'XX99 Mark II Headphones',
+      name: 'XX99 Mark II',
       image: {
         mobile:
           '/images/product-xx99-mark-two-headphones/mobile/image-product.jpg',
@@ -388,7 +388,7 @@ export const db = {
         },
         {
           slug: 'zx9-speaker',
-          name: 'ZX9 Speaker',
+          name: 'ZX9',
           image: {
             mobile: '/images/shared/mobile/image-zx9-speaker.jpg',
             tablet: '/images/shared/tablet/image-zx9-speaker.jpg',
@@ -400,7 +400,7 @@ export const db = {
     {
       id: 5,
       slug: 'zx7-speaker',
-      name: 'ZX7 Speaker',
+      name: 'ZX7',
       image: {
         mobile: '/images/product-zx7-speaker/mobile/image-product.jpg',
         tablet: '/images/product-zx7-speaker/tablet/image-product.jpg',
@@ -463,7 +463,7 @@ export const db = {
       others: [
         {
           slug: 'zx9-speaker',
-          name: 'ZX9 Speaker',
+          name: 'ZX9',
           image: {
             mobile: '/images/shared/mobile/image-zx9-speaker.jpg',
             tablet: '/images/shared/tablet/image-zx9-speaker.jpg',
@@ -494,7 +494,7 @@ export const db = {
     {
       id: 6,
       slug: 'zx9-speaker',
-      name: 'ZX9 Speaker',
+      name: 'ZX9',
       image: {
         mobile: '/images/product-zx9-speaker/mobile/image-product.jpg',
         tablet: '/images/product-zx9-speaker/tablet/image-product.jpg',
@@ -557,7 +557,7 @@ export const db = {
       others: [
         {
           slug: 'zx7-speaker',
-          name: 'ZX7 Speaker',
+          name: 'ZX7',
           image: {
             mobile: '/images/shared/mobile/image-zx7-speaker.jpg',
             tablet: '/images/shared/tablet/image-zx7-speaker.jpg',

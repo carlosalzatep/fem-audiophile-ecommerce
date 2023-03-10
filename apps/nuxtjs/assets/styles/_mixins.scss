@@ -26,3 +26,16 @@
 %image-border {
   border-radius: 8px;
 }
+
+// Breakpoints
+@mixin for-tablet-up {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
